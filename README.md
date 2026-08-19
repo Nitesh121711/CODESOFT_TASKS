@@ -1,27 +1,29 @@
-# Network Packet Analyzer
+# Secure Code Assessment
 
-## CodSoft Cyber Security Internship - Task 1
+## CodSoft Cyber Security Internship - Task 3
 
-A Python-based Network Packet Analyzer developed using Scapy.
+### Objective
+To identify common security vulnerabilities in source code using a simple Python-based static code scanner.
 
-## Features
+### Vulnerabilities Detected
 
-- Captures network packets
-- Displays source IP address
-- Displays destination IP address
-- Identifies network protocols
-- Displays source and destination ports
-- Displays available packet data
-- Captures 20 packets in each execution
+1. Hardcoded Password
+2. Use of eval()
+3. Use of os.system()
 
-## Technologies Used
+### Recommended Fixes
+
+- Do not store passwords directly in source code.
+- Avoid using eval() with user-controlled input.
+- Avoid os.system() with untrusted input.
+- Validate and sanitize user input.
+
+### Tools Used
 
 - Python
-- Scapy
-- Npcap
 - Visual Studio Code
+- Regular Expressions (Regex)
 
-## How to Run
+### Result
 
-```bash
-python packet_analyzer.py
+The scanner successfully detected multiple common security issues in the sample source code and provided recommended fixes.
