@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛡️ Phishing Awareness Program</h1>
+        <p>Learn how to identify and avoid phishing attacks</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#identify">Identify Phishing</a>
+        <a href="#social">Social Engineering</a>
+        <a href="#tips">Security Tips</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>What is Phishing?</h2>
+            <p>
+                Phishing is a cyber attack in which attackers try to trick
+                users into revealing sensitive information or interacting
+                with fraudulent content.
+            </p>
+
+            <div class="warning">
+                ⚠️ Never share passwords, OTPs, PINs or other sensitive
+                information with unknown or suspicious sources.
+            </div>
+        </section>
+
+        <section id="identify">
+            <h2>🔍 How to Identify Phishing</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>📧 Suspicious Emails</h3>
+                    <p>Check the sender address, unexpected attachments,
+                    urgent requests and unusual links.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔐 Fake Login Pages</h3>
+                    <p>Check the website address carefully before entering
+                    your username or password.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🌐 Fraudulent Websites</h3>
+                    <p>Look for suspicious domains, spelling mistakes,
+                    unusual requests and misleading content.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="social">
+            <h2>🎭 Common Social Engineering Techniques</h2>
+
+            <ul>
+                <li><strong>Urgency:</strong> Creating pressure to make you act quickly.</li>
+                <li><strong>Impersonation:</strong> Pretending to be a trusted person or organization.</li>
+                <li><strong>Fear:</strong> Threatening account suspension or other consequences.</li>
+                <li><strong>Reward:</strong> Offering fake prizes, jobs or benefits.</li>
+                <li><strong>Trust:</strong> Using familiar names, logos or relationships to appear legitimate.</li>
+            </ul>
+        </section>
+
+        <section id="tips">
+            <h2>🛡️ Security Tips</h2>
+
+            <div class="tips">
+                <p>✅ Verify the sender before responding.</p>
+                <p>✅ Check URLs carefully before opening them.</p>
+                <p>✅ Avoid clicking suspicious links or attachments.</p>
+                <p>✅ Use strong and unique passwords.</p>
+                <p>✅ Enable multi-factor authentication when available.</p>
+                <p>✅ Keep your operating system and applications updated.</p>
+                <p>✅ Report suspicious messages instead of forwarding them.</p>
+            </div>
+        </section>
+
+        <section id="case-study">
+            <h2>📚 Case Study</h2>
+
+            <p>
+                Imagine receiving an email claiming that your account will
+                be suspended unless you click a link and verify your details.
+                The message creates urgency and asks for sensitive information.
+            </p>
+
+            <p>
+                Before taking action, verify the message through the
+                organization's official website or another trusted channel.
+            </p>
+        </section>
+
+        <section id="quiz">
+            <h2>📝 Phishing Awareness Quiz</h2>
+
+            <div class="question">
+                <p><strong>1. What should you do before clicking a suspicious link?</strong></p>
+
+                <button onclick="checkAnswer(1, 'wrong')">
+                    Click it immediately
+                </button>
+
+                <button onclick="checkAnswer(1, 'correct')">
+                    Verify the link and sender
+                </button>
+
+                <button onclick="checkAnswer(1, 'wrong')">
+                    Forward it to friends
+                </button>
+            </div>
+
+            <div class="question">
+                <p><strong>2. Which is a common phishing warning sign?</strong></p>
+
+                <button onclick="checkAnswer(2, 'correct')">
+                    Urgent request for sensitive information
+                </button>
+
+                <button onclick="checkAnswer(2, 'wrong')">
+                    Expected message from a known source
+                </button>
+
+                <button onclick="checkAnswer(2, 'wrong')">
+                    Normal website navigation
+                </button>
+            </div>
+
+            <div id="result"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CodSoft Cyber Security Internship - Task 2</p>
+        <p>Educational purpose only</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
